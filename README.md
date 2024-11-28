@@ -72,4 +72,3 @@ Follow the steps below to run the CareerPath Recommender locally:
 - **Scientist** (Probability: 65%)
 
 ---
-
