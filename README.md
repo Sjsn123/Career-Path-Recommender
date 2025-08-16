@@ -1,74 +1,97 @@
-# **CareerPath Recommender 📚✨**  
-**A Smart Educational Guidance System for Students**
+# Career Path Recommender 🎯
 
-**CareerPath Recommender**, an interactive recommendation system that helps university students choose the most suitable career paths and educational courses. By analyzing academic performance, personal attributes, and interests, this tool provides personalized career suggestions using machine learning.
-
----
-
-## **🚀 Features**
-- **Personalized Career Recommendations**: Suggests the top three career paths or educational directions based on user profile and scores.
-- **Real-Time Calculations**: Automatically computes total and average scores based on subject inputs.
-- **Diverse Career Suggestions**: Offers a broad range of career options, from STEM to creative and business fields.
-- **User-Friendly Interface**: Built with [Streamlit](https://streamlit.io/) for an engaging and easy-to-use experience.
+A smart quiz-based career guidance application that helps students and professionals explore possible career paths.  
+This project recommends careers based on user responses and generates a **visual flowchart** of career options.  
 
 ---
 
-## **🛠️ Tech Stack**
-- **Language**: Python
-- **Framework**: [Streamlit](https://streamlit.io/)
-- **Machine Learning**:
-  - Pre-trained Scikit-learn model for career path prediction.
-  - Scaler for input normalization.
-- **Other Tools**:
-  - **NumPy** for numerical operations.
-  - **Pickle** for saving and loading the trained model and scaler.
+## 🚀 Features
+- Interactive quiz to understand user interests & strengths  
+- AI/ML-based career recommendations  
+- Flowchart visualization using Mermaid.js  
+- Export results to PDF for easy sharing  
+- Simple and clean UI  
 
 ---
 
-## **📑 How It Works**
-1. **User Inputs**: Provide information such as gender, study hours, part-time job status, extracurricular activities, and academic scores (Math, Physics, Chemistry, etc.).
-2. **Dynamic Calculations**: The total and average scores are calculated automatically as users enter their scores.
-3. **Career Prediction**: A pre-trained machine learning model predicts the top three career paths based on the input data.
-4. **Results Displayed**: Career recommendations are shown along with the predicted probabilities.
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript / Streamlit  
+- **Backend:** Python  
+- **Visualization:** Mermaid.js  
+- **Database:** SQLite / MySQL  
+- **Other Tools:** Pandas, Matplotlib  
 
 ---
 
-## **🔧 Installation**
-Follow the steps below to run the CareerPath Recommender locally:
+## 📂 Project Structure
+CareerPath_Recommender/
+│── app.py # Main application entry point
+│── requirements.txt # Dependencies
+│── README.md # Project documentation
+│── .gitignore # Ignored files
+│── data/ # Dataset (if any)
+│── models/ # ML models or recommendation logic
+│── static/ # CSS/JS assets
+│── templates/ # HTML templates (if used)
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Yashpurbhe123/CareerPath_Recommender.git
-   
-   cd CareerPath_Recommender
-   ```
+yaml
+Copy
+Edit
 
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-3. **Run the Application**:
-   ```bash
-   streamlit run app.py
-   ```
+## ⚡ Installation & Setup
 
-   The application will launch in your web browser.
+# 1. Clone this repo
+git clone https://github.com/Sjsn123/Career-Path-Recommender.git
+cd Career-Path-Recommender
 
----
+# 2. Create virtual environment
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# Mac/Linux
+source .venv/bin/activate
 
-## **📊 Example Input and Output**
-### Example Input:
-- **Gender**: Female
-- **Weekly Study Hours**: 10
-- **Math Score**: 85
-- **Physics Score**: 80
-- **Chemistry Score**: 75
-- **Other Subjects**: Provided by the user
+# 3. Install dependencies
+pip install -r requirements.txt
 
-### Example Output:
-- **Lawyer** (Probability: 85%)
-- **Doctor** (Probability: 70%)
-- **Scientist** (Probability: 65%)
+# 4. Run the app
+streamlit run app.py
+📊 Example Flowchart
+mermaid
+Copy
+Edit
+graph TD
+    A[Start Quiz] --> B{Interested in Science?}
+    B -->|Yes| C[Engineering / Medicine]
+    B -->|No| D{Interested in Arts?}
+    D -->|Yes| E[Design / Literature / Fine Arts]
+    D -->|No| F[Commerce / Management]
+📌 Future Enhancements
+Add user authentication
 
----
+Store results in database for tracking progress
+
+Advanced ML models for personalized recommendations
+
+Better UI/UX design
+
+🤝 Contributing
+Pull requests are welcome. For major changes, open an issue first to discuss changes.
+
+📜 License
+This project is open-source under the MIT License.
+
+yaml
+Copy
+Edit
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
